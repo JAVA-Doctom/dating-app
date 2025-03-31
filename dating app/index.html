@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dating App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <header>
+      <h1>Love Connect</h1>
+    </header>
+
+    <section class="profile-section">
+      <h2>Create Your Profile</h2>
+      <form id="profile-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Your age" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Your location" required>
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" placeholder="Tell us about yourself" required></textarea>
+
+        <button type="submit">Create Profile</button>
+      </form>
+    </section>
+
+    <section class="matches-section">
+      <h2>Suggested Matches</h2>
+      <div id="matches-container" class="matches-container">
+        <!-- Matches will appear here -->
+      </div>
+    </section>
+
+    <footer>
+      <p>Love Connect - Your place to find love!</p>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
